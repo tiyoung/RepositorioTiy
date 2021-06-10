@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NovoUsuarioActivity"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="NOVO CONTATO"
+        android:textColor="@color/ColorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="30dp"
+        android:text="Nome"
+        android:hint="Informe o nome"/>
+
+    <EditText
+        android:id="@+id/txtNomeContato"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:textColor="@color/ColorPrimaryDark"
+        android:textColorHint="#CCC"
+        android:text=""
+        android:hint="Informe o nome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="30dp"
+        android:text="E-mail"/>
+
+    <EditText
+        android:id="@+id/txtEmailContato"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/ColorPrimaryDark"
+        android:textColorHint="#CCC"
+        android:text=""
+        android:hint="Informe o e-mail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="30dp"
+        android:text="Celular"/>
+
+    <EditText
+        android:id="@+id/txtCelularContato"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:inputType="phone"
+        android:textColor="@color/ColorPrimaryDark"
+        android:textColorHint="#CCC"
+        android:text=""
+        android:hint="Informe o celular"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+    </ProgressBar>
+
+    <Button
+        android:id="@+id/btnCadastrarContato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="70dp"
+        android:text="Cadastrar Contato"
+        android:textColor="@color/ColorPrimaryDark" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lista de Contatos</string>
+    <string name="login">Login</string>
+    <string name="password">Senha</string>
+    <string name="password_hint">******</string>
+    <string name="logar_usuario">Logar</string>
+    <string name="nomeusuario">Nome Usuário</string>
+    <string name="BASE_URL">https://inovacao-teste.herokuapp.com/api/</string>
+</resources>
